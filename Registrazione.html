@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registrazione</title>
+</head>
+<body>
+    <h1>Compila la seguente form</h1>
+    <form>
+        <label>Nome</label>
+        <input type="text" placeholder="Mario" />
+        <!--placeholder mi da il suggerimento sul riempimento del campo-->
+        <br />
+        <br />
+        <br />
+        <label>Cognome</label>
+        <input type="text" placeholder="Rossi" />
+        <br />
+        <br />
+        <br />
+        <label>Mail</label>
+        <input type="email" placeholder="mail@mail.com" required />
+        <!--Required indica che il campo è obbligatorio-->
+        <br />
+        <br />
+        <br />
+        <!--Quando si richiede la psw solitamente si mettono obbligatori
+        dei caratteri speciali-->
+        <label>Password</label>
+        <input type="password" pattern="[a-zA-Z]{1,3}" required />
+        <br />
+        <br />
+        <br />
+        <!--Spesso si trova il calendario in cui inserire la data di nascita-->
+        <label>Data Nascita</label>
+        <input type="date" />
+        <br />
+        <br />
+        <br />
+        <label>Numero di Telefono</label>
+        <input type="tel" />
+        <br />
+        <br />
+        <br />
+        <label>Sesso</label>
+        <!--Creo menù a tendina, mi fa selezionare un valore alla volta-->
+        <!--Il selected mi da il valore di default che ho selezionato-->
+        <select>
+            <option value=" " selected>Seleziona un'opzione</option>
+            <option value=" 1">F</option>
+            <option value=" 2">M</option>
+            <option value=" 3">Non voglio dichiararlo</option>
+        </select>
+        <!--Un altro modo può essere la selezione multipla-->
+        <br />
+        <br />
+        <br />
+        <!--Questa volta uso checked per avere il valore di default-->
+        <label><input type="radio" value="1" name="sesso" />F</label>
+        <label><input type="radio" value="2" name="sesso" />M</label>
+        <label><input type="radio" value="3" name="sesso" checked />Non voglio dichiararlo</label>
+        <br />
+        <br />
+        <br />
+        <label>Lingue Conosciute</label>
+        <label><input type="checkbox" value="1" name="Lingua" />Italiano</label>
+        <label><input type="checkbox" value="2" name="Lingua" />Inglese</label>
+        <label><input type="checkbox" value="3" name="Lingua" />Francese</label>
+        <br />
+        <br />
+        <br />
+        <input type="submit" value="Conferma Registrazione" />
+        <input type="reset" value=" Annulla " />
+    </form>
+</body>
+</html>

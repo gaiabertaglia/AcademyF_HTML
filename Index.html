@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Mia Prima Pagina </title>
+</head>
+<body bgcolor="PINK">
+    <p style="text-align: center">
+        <!--Voglio che il contenuto di p vada al centro-->
+        <!--Per commentare si usa questa scrittura-->
+        La mia prima pagina HTML
+    </p>
+    <p style="color: green">
+        Ciao!   Prova con tanti spazi
+        <!--Per utilizzare gli spazi bisogna specificarlo-->
+        Prova &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ho realmente inserito spazi.
+        Con l'invio non vado a capo <br />
+        Solo così vado realmente a capo
+    </p>
+    <p>
+        Altro paragrafo <br />
+        <b>Testo in grassetto</b>
+        <br />
+        <u>Teso sottolineato</u>
+        <br />
+        <i>Testo in corsivo</i>
+        <br />
+        <!--Posso anche combinarli-->
+        <b>
+            <i>
+                Grassetto corsivo insieme ma voglio aggiungere anche un <span style="font-size: 30px">Ciao</span> in
+                formato più grande
+            </i>
+        </b>
+    </p>
+    <p contenteditable="true">
+        Prova tu a cambiare questo testo
+    </p>
+    <!--Quando troviamo i pulsanti-->
+    <button type="button">Pulsante</button>
+
+    <button type="button" onclick="getElementById('pippo').setAttribute('hidden', '');"> Nascondi paragrafo</button>
+    <p id="pippo">
+        Nuovo Paragrafo
+    </p>
+    <h1>Titolo</h1>
+    <h2>Titolo</h2>
+    <h4>Titolo</h4>
+    <h6>Titolo</h6>
+
+    <h3>Aggiungiamo un'immagine</h3>
+    <img src="scacchi.jpg" /> <br />
+    <img src="scacchi.jpg"
+         width="100"
+         heigth="100"
+         alt="Immagine della luna! "
+         title="Ecco la luna" />
+    <!--Title mi compare quando mi posiziono sull'immagine, mentre alt compare se ci sono problemi di caricamento
+    o reperimento dell'immagine-->
+    <br />
+    <img src="Immagini/sole.jpg" /> <br />
+    <!--Vai sull'immagine e prendi il link all'immagine-->
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQVFRgWFRUYFhYVHBoeHRoYGhgaGBgcGhocHBkeHBocIS4lHCMrHxocJzgmKy8xNTU1HCQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJCs2ND0/NDU0ND49NDQ6NDQ0NjY0NDQxNDQ0NDQ0NDQ0NDQ0NDQ0NjQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwECB//EAEYQAAIBAgMEBwIKBwcFAQAAAAECAAMRBCExBRJBUQYiYXGBkaETsQcyQlJykrLB0dIUVGKCk8LhFyMzU6Pi8BU0Q0SiJP/EABkBAQEBAQEBAAAAAAAAAAAAAAAEAwUCAf/EACkRAAICAQMDBAICAwAAAAAAAAABAhEDBBJRFCExMkFhoRNxIjMjYoH/2gAMAwEAAhEDEQA/AP2aIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCInkAT53hKra2KspVWIdSLgXFxbMb2gNjcZ6gCVTVCLlRdhpYgEnv4d8ly6lQltqzaGFyVmsiQNn4kMAC+84Fyd0r32uNOEnyiMlJWjJpp0z2Iiej4IiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgHkRIOO2klIgNe5FwAPv0nyUklbPqTbpFdtWhukvcEuclItmFAtvfu30v2ZSCVNjbXtNh52Np32nj/bKFXdAvc7xBBA0uLi2diO6Qq5ZlI3ksRY5cPB5y87i52i7FuUaZd7Gof+QNvKwsBu2IIOdzc3zFspcTOYDbARFWpZio1UqOJsAt8gBYa8Jc4LGJVBKG4BsciM7A/eJdhlDalFkuVS3NyJcRPJuZHOpUCgkmwAuSeEhnaiDXeA+cR1c9L8R4zntmopQ0y1mYZWzIINwSOVx4zL1FxG6AzJY2DFSxsOJAIG9bPLKSZs+ySSN8WLcrZvIkTA4pHUbhuAALHUd4kuVJpq0YtU6PYiJ9PgiJ5APYiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIB5KjpBht+nvAZpn4fKHln4S3nywvkZ5ktyaZ9Tp2YBDPWWdnwrK7BQSFYgEZggHLPun02Gf5h8pxpqm0dNNNWVzi5m82VhPZU1Xja57zr+HhMtsfDFq6bwsBdutlcrmAO2+fcpm2lujitrkS6mXdRErNtUajJ/dnS5K/O7iOOuXG8s4MsklJUyZOnZ+f/APU2It7MX5gkfdyy1n2NpvfOktuwkfcZKxtACvUUaXv9YBvvnhodk4004yaOlFppOiImOqM4C0wGbKwJ61+B09ZtNn0nVAHILDlew5C5zNtL8ZQbAog1yT8lSR2EkD3E+c1Uv0sKjZJqJXKj2IiWE5UbceoqqUAbrWKb26WvpY9mZtll3Spw1auayKU9lc3v7QEMBmw3QTckXtceMkbV2gS9kG8wJVV4FvlMeSjn2dsjHAboDli9UEHeN9Qb5DgJBkneS14RXCNRp+5rYkbA4kVEVhlfUciMiPOSZcmmrRK1XYTy8pds7TdDuU1JawJYWuoN9ARYnLj6yow5d899ieO87A+W6PdJsmqjCW1K2awwSkrfZGxE9mbwuNNI5ksG1AuxvzGXIenZLihtCkwuHFu02yOhz1HaMp7x54zXD4PM8cosmRIVXadFfjVFAOV75X79JLVgRcZgzVST8M8U15PuIiej4IiIAiIgCIiAIiIAiIgHkj4rEimjO2igk27JIlVtfAvU3SjAFb5NfdN7Z3HHL1nmTaTryeopN9zM1xh6tRnuo3iDbeItkAdMsyL+M8bD4fmv8R/xnm1NoVsO4RqauSoYFCSLEkcbcjIDdI3/AMmcae5Se7ydKCtLb4/ZY7MxFChUL2BysOtci+pG8eVx4zdAzA7JNfF7xVFQLYEsSL3vpYHl6ibDZWENJN1m3jcnK9hfgLy7SOSjTXbkk1Kjd33J8jY3FCmjORcKLmSZV7YwT1Qu4wBUnJr7pvblxFvUyqVqLaXcnik338GYTEKzMwxAAJJC3RrA52uVJPeZ1esP1geJp2+xOONxtSg5R0BYAG65qQeRNj6cJHO3W/yr+AnGnak93k6cVaTR2wuPWjVDtVDhQeqGQZnjkov3Td02uL85h9mNVxLMERV3QLliQM72tug3ORmu2XhDSphSd45nLQX4C/CX6Pcou12JdTtv5J0j4xiqOw1VWI7wCRJE8MsZKZLA4lVzOtteP/MhO9TGJukc5W47Z6ms5VVKnMEM6rc2yG6wHlOGI2aAp6o+vW/NORJtNrg6MVFqzRdHKtzUA0BU+JuD6AS9lZsGiiUVVCDYXa2u8czfjfhnnlLOdTCqgkQ5HcmzH7fp1TXJpvu2VQQQCpy48fIzhSd/lEFua3APgSffJG3qjLiCL9VlU8LfKGp+jznBEJ0IvyOV+y4vY+c5Of8Asf7L8foX6PKiv82opB1X2d//AKJBHhOtJygC7pUAAANra2XGcG3VzJqK3zbnXsUajukvD7Gq1gGNRaaHMbo33PeTYKezrT5CMpOoiUox7yONWsCesFIOQU6G/vM0Owf8BcrWLADkA7ADylJjOi9W4FKtvK2Te1ztzICizdxt38tHs/CClTWmDcIAL2UX7bKAB4S3TYpwk3ImzzhJJRIm2ce9Ld3QvWve4PC2mfbK+jtmq2ot4DmfS1p06WMAqE5C7D0B+4ykp4ymNaiD99fxnjUZJxnUWz3hhFxtou22rU+dbwH4SPX27WU5btj2ZDLjmDn98r/02l/mJ9dPxkSvi6ZyDoe5lPumKzZeWa/ihwfoGHfeRWOpAPmLzrOOFFkQHUKvuE7TrLwc5iJ8OwAuTYDiZDfalMcz2gZT45Rj5Z9Sb8E+JHw2JWoLoQR6g8iDmJIn1NPuj41R7ERPoEREAy/SWiGqp9E+/wDqZVVMGLaS52sd7EAfNVR4kkn0InKtS1A4CcrOrmy/C6iiV0TpgU3t88/ZWX0oujL5VF5MD5i38svZfg/rRJl9bPYiJsZmV6TUgayHmnuY/jK1sOJbbbO9XA+ao8yWPutOLUdRORqFeR0dDC6giX0VpgK5/aA8h/UzQSg6NNnUXtU+YIPuEv50NO/8aJM3rYlXtmvURRuIXBuGspcgfRGZvnzlpPJrJWqM06dmDp16SdU1aqEcG3gRyuGzh8dRtY4h/OTtvYJGrkkDrKpPgCPcBKvFbMQC+6NOU5OSLjJx4OjCSaTZabArOr2pq7K5BZ3VwN3mGIAyGdhz7Zr5HwVMJTRRoqqB3AACd508UNkauyDJLdK6Mr0spf3lJrZlWH1WX9hj8oyIL3ty/wCcpP6XML0gbfLOdv2eZHOcsNTUpcW4eWXKc7URvK6LML/gjwVW5zpg8eyNcZqfjL945H3+U+HpZ7vOerh7XPL7plByjK4nuSjJUzS4eurqGU3B0P8AzSdpmMJWNJt4XKt8Ze22o7f69k0OHrBlDKbg8e7I+onUw5lkXyQ5Mbg/g54vBpUFmF7XscwRfkRMAWrqzKarAqSDYAi4Nja47J+kzFbQX+/qDt94vMdZFbVL3NtNJ20VL1cRwrP9Qflln0Xwj1nc1mZ0UWs3V6xOWS2uAAdeYnrplLjoqtkf6f8AKv4yXTRTyJM2zyag6L5VAFhkBPqInXOeZ7pHXO8iXsp6x7bGwHv9JwplbCS+keCd1V6YuyX6oyJB1tfiLe+Y7/raAWJsRwORBGoInN1NqdsuwJSjRo8NX3a6FdGO6w4EHIeRz85qpi+jNF6zCuQRSGak6udAQNd0HO/GwtebSU6VNQ7k+drd2PYiJSYnk8M9lHt3aIUGlfdLAXJyBB1A58p4nNRjbPUYuTpEKhU36jPwYkju0X0AkriZX4fEIvylP7y/jOjY5ea/WWclyTdsvUa7DZVfcxFjo43fG+XqLeM1cweIrpe5dB+8v3GafYu0fbKTru2BYfFY9nbzHaJXpMirayfUQfqLafJM9lFtvaO7ekOqSBcniDwHuv3yuc1CNswjFydIgJU36rPwZsu4Cw9BJi/GPd+EgYVwvEHxE7nFDM29ROQ527fJftrsc9nVfZ189GJU+Jy9QPOawTEYkqc7geIl/sPaJqgqesVAuw0PK/b+Blekyr0P/hhng/UXERIePxYRSdTbIcSeGXKXNpK2TJW6RUVSHrseCnd+qLH/AOrz5xdHqk8sp7gwF1OfbxOpnaoylSLjO/GcuX8rb97LY/xpFnsurvUkPHdAPeMj6gyXKDY+KCkoxspzU8AeIvwv+Mv50MM90EyTJHbJoyfSZWNQEqwUKAGzC3JJOY0OmXZPMA1kyubXBzJtxGvYZqzPz3a+FZcQ536tPMWFAqqlbXHVtYmxzJvnI9Ri2vffkowT3LbwXji5vwnYuPOZzee3/cYr6uFPvSQ8Wjtl+k4wdg9inqiiTWl7lO1l/iqpYijSI9q/G1wnae22duQPZNVg6ApoqAkhQBc6nmT2k5nvme6D4M06JJ6wLHddgPaMOO+w+NnkL8u6amdHTY1GO7khzSuVcCY9uvVc82a3cDYelpo9qYn2dNjx0HedPLXwme2bTt4TPVSuonvTryz6alkeyS+jFT/EXkVPmCP5YVdZDwNb2VcE5K11bsucj5geF5Pie2abNsi3QaNdE8ns6pAUe2sNWY3QqUCm6EkEkXOVhY3FsieEyY2ym7/hsB2LN/jKwRGY6KCe/kPE5TG0NnXRRz+4TnauNNNPuyzTy7NM79HEq1N2rR6lEsbgmxYK1mstrZ2IubcZs5R9FiBR3OKMwI+kxYfa9DLyVadJY1RPldyZ7ERNzM8mW29VWo6qMwlwTzJIuPC3qZebVdlouV1A4agcSO4XmRw7pz9ZHq8m2O3kowRt2TKOCS2funycFTvw8p0StT5n0nhqJfX1E57os7kLE4NBp7pddG8Sqg0jkb3HblmO/KVdd6fAnxIkF8UN4BSSxI3QNd6/Vt23tPeHJ+OZ5yQ3xo/Q5mtvhajqBqoIJ7SRl4W9ZdY6oy0WYZsFJy5gZ2mVo11Oct1U0o7eSXBC3fB0pbPU8ROv6AulxOi1EtqZ4Ki3z0kG2JVbIlbBqMsj3Sz6OVVW6HIk3Hblp9/nIdaonAmQK2KA0OfC2t+Fu2eseRY52j5kg5Ro3kzm3l3qqbpswXO3fcD3+ctsZiGSizkdZVueQPE9w18JnaVTeNybk8e+XanIlHbyS4IO93B2p4dyPje78IGGc3632fwnZWFvjCN79q0hpFXcrK9E/KYkXzHMcdJs6bAgEZgjLu4TK4gjmJM6OYssWS9wBvfRubW8c/IyjSzUZbeTHPFyW7gvajhQSTYDjMniv7yozEa2t3DIegkzpDjCrqjZKVuORNyD3kZefbIVDEJxNp91OVN7eBghS3ckg0EsLT4xGHXUT69sh+XPGdPnekmdG/cmdHcSAppHIgkr2g5kDtvc+PZL+YWriEXPemqwdd2oB7dcqSAeJsd0+OR8Zdpsu6NP2JM2OnfJS9JKjCqoU7wsLqcwDnpyuJEoV6g0TyP9JGp4zeN2NyTnfW/G/bJ9GsvzrechyTU5tplUIbYpHz+lVeCev+2QsQ7m90155/cJZjEj51pHxVdPnXnl+PJ7X6NFsRiaKFm3iQbk95y8NJYzI9HcWfbbi5qQSw4CwybsN7Dx7Jd7Wx/sgoHxmvYnQWtfxzE6eLKnj3P2IJ42p7UVO1sezVGpsDuofk6HK4Leek4DE2tYHyM+qS3Ja9yedjc8Z3e99Bcd0gySc5NlcIqKSK+njzScut8xYqQbEa56ec2lM3AJ5cPxmQxC8SB5CT9hbUJYUmzyO6eIsL2PZYZHsm2ly09kn+jLPDtuRpIiJ0SQpulGPXD4d6juUUFBvDey3nVfki/GYbC43AtpWpd3tQp8iwn6TjMJTqoUqoro2qsAVPeDKGv0B2Y2uEQfRLp9lhJ8uD8juzXHlcPBRImFOjr4Vv8AdPWp4Xi6/wAb/dLIfBrsv9XJzvnVr/nnv9muyv1b/Vr/AJ5h0S5Neqlx9lHWfBDI1kHYa4N/DezlTjdr4Kn1hUQspy3CXYHQWtexm6pdA9mqLDDKfpM7HlqzGWGC6N4Kid6lhaCN85aaBvrWvPq0Ubux1UuD72hWNLCu7NutTpFma+m6t2Nz3HOYrB1KDi6VEYH5lRSPQmforoGBBAIIsQcwQdQRKDE9Cdmv8bB0czfqruZnj1LTbNg/JXfwZ48uy+xWphFPF/MfhH6KObeY/CdH+DPZRv8A/ltc3yqVh5WfKeN8GOyiQThzlw9rWt9uYdD/ALfRr1T4ItajTGr273AlPjNoYVDf2tMsuYAcO1xoQoJN724TT0/g62Wpv+ig/Seqw5aM5EscL0SwFM3TB0ARxKKx82BMLQrzZ86p8HTalRkwpYmxVVLEnQC3tCTyC71zMhgWwri6Vlb6FcMPLeM/RGUEWIuDqDKDG9CNnViS+EpXOpVdwn6tpvkwKbTszx5nD2KtcGvCo/g6H+WenAr/AJj/AFk/LOj/AAY7JP8A6tu6pWH885/2WbJ/Vj/FrfnmPRrn6NOpfBBxdCiB1qpHfVC+60l9DMTSNZ0oVA6hSz7r+0CtdQu8bkAnrW7jJmH+DrZSaYRD9Jqj/aYzQYHZ1Ggu7RpU6S8qaKo8bDOe8elUJKVnmedyjtoxvTPatAYgUK1VU3UR1VmKC7F1uGyF8iNZXYdMMw6tfL9mqjD1Jm/2jsfD4gAV6NOrbTfRWI7iRcanzlNW+D7Zja4VB9FqinLtVhGTS75XZ8hncY1RRJg6Oorv9dPwnycJR413He9OW5+DPZR/9b/VrfngfBlsn9V/1K355n0Xz9GnVPj7M5ixg0zeuuWfXrKB5Xz7pu8JimbBCqTdmpFw1xoVLKb6aWMiYXoPs2nbdwdG44su/wDbvNAKYAsAAALWtlblblN8WD8d9/JllzOdWj8uwdfDV+sKqMzG7btUXJOZuA1798taey0IyZ/BgfeDNHieiGzqnxsHhyTxFNVPmoBldV+DjZTG/wCiKD+y9VfRXEyejTfk16l8Fc2yVz69XzX8s44jZCAZs572t7rS2/s22X+rH+NX/PPql8HGylNxhFJ/aeq3ozmeei+R1T4IPRR0XEezpMpJVmdRUDndXJSwvf4zAePfJ3TrEKq0g7rTRmYb7FVswAKqGbIEjfy47sudlbBwuGuaFCnSJFiUUBiNbFtTnJWNwNKsu5WppVW992oqst+dmBF85QsNY9lmLy3PdRg8NSLDqYgHlkr/AGWEkvhqw/8AMv8ACb88t6vQLZjG5wdL90FR5KRIw+DbZXDDEd1WuP55h0fz9G3VfBT4rD1bZ1x/DI97yR0SfdxO77QVGZWuOrdFA+MADcXYqLm+oEsP7Ntlfqt++rWPveXWyOj+Fwt/0eglItYMVGZA0BJzM9Q0u2Slf0fJ6jdFxotoiJYSiIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgH//Z" />
+    <!--Si può rendere un'immagine cliccabile, facendo una mappa dell'immagine'-->
+    <!--Immagini cliccabili-->
+    <br />
+    <img style="text-align: center" src="scacchi.jpg" width="300" heigth="300" usemap="#miaMappa" />
+    <!--Simile a quello che succede con il tag di Facebook-->
+    <!--Facciamo un quadrato in alto a sinistra-->
+    <map name="miaMappa">
+        <area shape="rect" coords="0,0,50,50" href="PaginaProva.html" />
+        <area shape="circle" coords="150,150,50" href="PaginaProva2.html" />
+    </map>
+
+    <br />
+    <!--Vogliamo creare un link cliccabile-->
+    <a href="PagineHTML/PaginaDeiGatti.html" target="_blank">Clicca qui per andare alla pagina dei gatti</a>
+    <br />
+    <!--Per aprire un'altra scheda devo specificare un target-->
+    <!--Usiamo il tag ancora per spostarci all'interno dello stesso documento-->
+    <a href="#ultimoParagrafo">Clicca qui per andare all'ultimo paragrafo</a>
+
+    <br />
+    <h2>Elenco Puntato</h2>
+    <ul>
+        <li>Prima Opzione </li>
+        <li>Seconda Opzione </li>
+        <li>Terza Opzione </li>
+        <li>Quarta Opzione </li>
+
+
+    </ul>
+
+    <h2>Elenco Numerato</h2>
+    <ol>
+        <li>Prima Opzione </li>
+        <li>Seconda Opzione </li>
+        <li>Terza Opzione </li>
+        <li>Quarta Opzione </li>
+
+
+    </ol>
+
+    <h2>Tabella</h2>
+    <!--Ha una testata, i titoli delle colonne e i dati-->
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Prima Colonna</th>
+                <th>Seconda Colonna</th>
+                <th>Terza Colonna</th>
+            </tr>
+        </thead>
+        <tbody style="color: red">
+            <tr>
+                <td>Riga1 Colonna1</td>
+                <td>Riga1 Colonna2</td>
+                <td>Riga1 Colonna3</td>
+            </tr>
+            <tr>
+                <td>Riga2 Colonna1</td>
+                <td>Riga2 Colonna2</td>
+                <td>Riga2 Colonna3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="center">Footer della tabella</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--Nella pagina posso inglobare sia video che audio-->
+    <!--<video width="320" heigth="240" controls="controls">
+        <source src="Video/Gattini carini e divertenti.mp4" type="video/mp4"
+    </video>-->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <a name="ultimoParagrafo"></a>
+    <p>Ultimo paragrafo</p>
+
+    <!--Si clicca su un link e si apre automaticamente la casella di posta-->
+    <a href="mailto:tizio@mail.it">Clicca per inviare una mail a tizio</a>
+    <br />
+    <iframe width="942" height="530" src="https://www.youtube.com/embed/J7gN9tvmPiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br />
+    <br />
+    <br />
+    <!--Mettiamo il link all'interno di un bottone-->
+    <a href=" https://www.google.it"></a>
+    <button onclick="location.href='https://www.google.it'">Vai su Google</button>
+
+    <p>Registrati! Inserisci <a href="Registrazione.html">qui</a> i tuoi dati</p>
+
+
+</body>
+</html>
